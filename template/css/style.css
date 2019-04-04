@@ -18,7 +18,7 @@ body{
     width: 10%;
     height: 6vh;
     position: fixed;
-    left: 1%;
+    right:1%;
     top:4%;
     font-size:4vh;
     text-align: center;
@@ -55,7 +55,7 @@ body{
 }
 
 #accountingDesktop:hover{
-    color: white;
+    color: black;
 }
 
 #accountingMobile{
@@ -63,11 +63,43 @@ body{
     width: 10%;
     height: 6vh;
     position: fixed;
-    right: 1%;
+    left: 1%;
     top:4%;
     font-size:4vh;
     text-align: center;
 }
+
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+
+
+#slider{
+    overflow: hidden;
+    height: 50vh;
+}
+
+.slide { width: 20%; float: left;height: -webkit-fill-available; }
+
+#slider figure { 
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 50s slidy infinite; 
+  }
+
 
 
 @media only screen and (max-width:1023px){
