@@ -16,6 +16,11 @@
 </head>
 <body>
 
+        <div id="sideMenu">
+            <a href="#" onclick="closeSideMenu()"><i class="fas fa-times"></i></a>
+            
+        </div>
+
     <div id="navbar">
         
         <div id="logo">LOGO</div>
@@ -23,18 +28,21 @@
         <a href="#"><p1>پشتیبانی</p1></a>
         <div id="accountingDesktop"><p2>ورود / ثبت نام</p2></div>
         <div id="accountingMobile"><i class="fas fa-user"></i></div>
-        <div id="hamburger"><i class="fas fa-bars"></i></div>
+        <div id="hamburger" onclick="openSideMenu()"><i class="fas fa-bars"></i></div>
     </div>
 
     <div id="slider">
+       
         <figure id="sliderContent">
-
           <img class="slide" src="./assets/1.png">
           <img class="slide" src="./assets/2.png">
           <img class="slide" src="./assets/3.png">
           <img class="slide" src="./assets/4.png">
         </figure>
+       
     </div>
+
+    
 
 
 
