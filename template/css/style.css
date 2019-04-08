@@ -185,6 +185,21 @@ body{
     float: left;
 }
 
+.expand{
+    display: none;
+    width: 150%;
+    background-color: coral;
+    position: absolute;
+    margin-top: 2.5vh;
+}
+
+.expand ul{
+    list-style-type: none;
+}
+
+.expandable:hover .expand{
+    display: inline;
+}
 
 @media only screen and (max-width:1023px){
     
