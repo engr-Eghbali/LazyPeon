@@ -17,12 +17,10 @@
 <body>
 
         <div id="sideMenu">
-            <a href="#" onclick="closeSideMenu()"><i class="fas fa-times"></i></a>
-            
+            <a href="#" onclick="closeSideMenu()"><i class="fas fa-times"></i></a>     
         </div>
-
-    <div id="navbar">
-        
+<!---->
+    <div id="navbar">     
         <div id="logo">LOGO</div>
         <a href="#"><p1>فروشگاه</p1></a>
         <a href="#"><p1>پشتیبانی</p1></a>
@@ -30,19 +28,37 @@
         <div id="accountingMobile"><i class="fas fa-user"></i></div>
         <div id="hamburger" onclick="openSideMenu()"><i class="fas fa-bars"></i></div>
     </div>
-
+<!---->
     <div id="slider">
        
         <figure id="sliderContent">
-          <img class="slide" src="./assets/1.png">
-          <img class="slide" src="./assets/2.png">
-          <img class="slide" src="./assets/3.png">
-          <img class="slide" src="./assets/4.png">
+            <div class="slide" style="background-image:url('./assets/1.png')"></div>
+            <div class="slide" style="background-image:url('./assets/2.png')"></div>
+            <div class="slide" style="background-image:url('./assets/3.png')"></div>
+            <div class="slide" style="background-image:url('./assets/4.png')"></div>
         </figure>
        
     </div>
+<!---->
+    <div id="menuBar">
 
-    
+        <div class="expandable" style="float:right;margin-right: 4%;"><i class="fas fa-chevron-down"></i> some shit</div>
+        <div style="width:4%;height:100%;float: right;margin-right: 4%;border-left: 2px solid white;border-right: 2px solid white;"></div>
+       
+        <div id="searchBar">
+            <button id="searchBTN"><i class="fas fa-search"></i></button>
+            <input type="text" placeholder="...جست و جو" name="search">
+        </div>
+
+        <div class="expandable" style="margin-left:2%;"><i class="fas fa-home"></i></a></div>
+        <div class="expandable"><i class="fas fa-chevron-down"></i> other shit</div>
+        <div class="expandable"><i class="fas fa-chevron-down"></i> another shit</div>
+        <div class="expandable"><i class="fas fa-chevron-down"></i> hammered shit</div>
+        
+        
+
+
+    </div>
 
 
 
