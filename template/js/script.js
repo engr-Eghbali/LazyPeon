@@ -17,7 +17,7 @@ function openSideMenu(){
     var pos=-100;
     var id=setInterval(function(){
         
-        if (pos<0){
+        if (pos<=0){
          document.getElementById("sideMenu").style.right=pos+"%";
          pos+=2;
         }else{
