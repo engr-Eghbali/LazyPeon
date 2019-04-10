@@ -18,7 +18,7 @@
 
         <div id="sideMenu">
             <a href="#" onclick="closeSideMenu()"><i class="fas fa-times"></i></a>     
-        
+            <div id="sideLogo">LOGO</div>
             <div id="sideSearch">
                 <button id="sideSearchBTN"><i class="fas fa-search"></i></button>
                 <input type="text" placeholder="...جست و جو" name="search">
@@ -26,13 +26,32 @@
 
             <div id="sideList">
 
-            <div class="collapsible" onclick="collapse('clps1')"><i class="fas fa-chevron-left"></i>  some shit
-                <div class="collapsed" id="clps1">
-                    <a href="#">subshit-1</a>
-                    <a href="#">subshit-2</a>
-                    <a href="#">subshit-3</a>
-                </div>
-            </div>
+            <div class="collapsible" onclick="collapse('clps1')"><i class="fas fa-chevron-down"></i>  some shit </div>
+            <div class="collapsed" id="clps1">
+                <ul>
+                  <li>subshit-1</li>
+                  <li>subshit-2</li>
+                  <li>subshit-3</li>
+              </ul>
+              </div>
+
+            <div class="collapsible" onclick="collapse('clps2')"><i class="fas fa-chevron-down"></i>  other shit </div>
+            <div class="collapsed" id="clps2">
+                <ul>
+                  <li>subshit-1</li>
+                  <li>subshit-2</li>
+                  <li>subshit-3</li>
+              </ul>
+              </div>
+
+            <div class="collapsible" onclick="collapse('clps3')"><i class="fas fa-chevron-down"></i>  another shit </div>
+            <div class="collapsed" id="clps3">
+                <ul>
+                  <li>subshit-1</li>
+                  <li>subshit-2</li>
+                  <li>subshit-3</li>
+              </ul>
+              </div>
 
             </div>
     

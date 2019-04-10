@@ -260,6 +260,7 @@ body{
     margin-top: 22vh;
     height: 78vh;
     position: relative;
+    overflow-y: scroll;
 
 }
 
@@ -274,9 +275,53 @@ body{
 
 }
 
-.collapsed{
-
+.collapsible i{
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
 }
+
+.rotate180 i{
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.collapsed{
+    height: max-content;
+    display: none;
+}
+
+.collapsed ul{
+    list-style-type: none;
+    color: aliceblue;
+    padding-right: 16%;
+    text-align: right;
+    font-size: 4vh;
+    margin: 2%;
+}
+
+#sideLogo{
+    width: 50%;
+    background-color: brown;
+    float: right;
+    margin-right: 20%;
+    margin-top: 4%;
+    height: 8%;
+    text-align: center;
+}
+
+
+.active{display: block;}
+.borderNone{border-bottom: none;}
 
 @media only screen and (max-width:1023px){
     

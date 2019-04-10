@@ -40,5 +40,12 @@ function closeSideMenu(){
     },10)
 
 }
+//////////////////////////////////////
+function collapse(id){
+    document.getElementById(id).classList.toggle("active");
+    document.getElementById(id).previousElementSibling.classList.toggle("rotate180");
+    document.getElementById(id).previousElementSibling.classList.toggle("borderNone");
+   
+}
 slideShow();
 
