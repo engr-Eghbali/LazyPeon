@@ -1,15 +1,4 @@
 
-function slideShow(){
-    var interval=0;
-    var n = document.getElementById("sliderContent").childElementCount;
-    document.getElementById("sliderContent").style.width = (100*n)+"%";
-    var childs=document.getElementById("sliderContent").children;
-    for (i=0;i<childs.length;i++){
-        childs[i].style.width=(100/n)+"%";
-    }
-   
-}
-//////////////////////////////
 
 //////////////////////////////
 function openSideMenu(){
@@ -47,5 +36,33 @@ function collapse(id){
     document.getElementById(id).previousElementSibling.classList.toggle("borderNone");
    
 }
-slideShow();
+////////////////////////////////////////
+ 
+function MoveSlides(direction){
+    
+    position=document.getElementById("sliderContent").style.left;
+    childsLength=document.getElementById("sliderContent").childElementCount;
+    
+    if(direction=='l'){
+        if (parseFloat(position) < (childsLength-2)*-100){
+            document.getElementById("sliderContent").style.left="0%";
+            
+        }else{
+            document.getElementById("sliderContent").style.left=parseFloat(position)-100+"%"
+        }
+    }
+
+    if(direction=='r'){
+        if (parseFloat(position) == 0){
+            document.getElementById("sliderContent").style.left=(childsLength-1)*-100+"%";
+            
+        }else{
+            document.getElementById("sliderContent").style.left=parseFloat(position)+100+"%"
+        }
+    }
+
+    
+}
+id=setInterval(MoveSlides,5000,'l');
+
 

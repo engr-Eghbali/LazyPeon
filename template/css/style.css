@@ -72,7 +72,7 @@ body{
 }
 
 
-@keyframes slidy {
+/*@keyframes slidy {
     0% { left: 0%; }
     20% { left: 0%; }
     25% { left: -100%; }
@@ -83,7 +83,7 @@ body{
     95% { left: -300%; }
     100% { left: -400%; }
     }
-
+*/
 
 #slider{
     overflow: hidden;
@@ -109,7 +109,7 @@ body{
     left: 0;
     text-align: left;
     font-size: 0;
-    animation: 40s slidy infinite; 
+   /* animation: 40s slidy infinite; */
   }
 
 .swap{
@@ -335,4 +335,15 @@ body{
     #sideMenu{display: block;}
     #menuBar{display: none;}
 
+}
+
+.slideController{
+    position: fixed;
+    width: 12%;
+    height: 5%;
+    margin-top: 20vh;
+    text-align: center;
+    padding-top: 3vh;
+    border: 1px solid black;
+    background-color: rgba(508,138,229,0.3);
 }

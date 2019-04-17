@@ -68,14 +68,16 @@
     </div>
 <!---->
     <div id="slider">
-       
-        <figure id="sliderContent">
+        
+       <figure id="sliderContent" style="left:-100%">
             <div class="slide" style="background-image:url('./assets/1.png')"></div>
             <div class="slide" style="background-image:url('./assets/2.png')"></div>
             <div class="slide" style="background-image:url('./assets/3.png')"></div>
             <div class="slide" style="background-image:url('./assets/4.png')"></div>
         </figure>
-       
+
+       <div class="slideController" style="left:0;" onclick="MoveSlides('l')"><i class="fas fa-arrow-left"></i></div>
+       <div class="slideController" style="right:0;" onclick="MoveSlides('r')"><i class="fas fa-arrow-right"></i></div>
     </div>
 <!---->
     <div id="menuBar">
