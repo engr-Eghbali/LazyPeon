@@ -63,33 +63,6 @@ function MoveSlides(direction){
 
     
 }
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////
-function MoveCards(direction){
-    
-
-    if(direction=='l'){
-        document.getElementById("cardContent").scrollBy(200,0);
-        document.getElementById("leftCardController").style.display="block";
-    }
-
-    if(direction=='r'){
-        document.getElementById("cardContent").scrollBy(-200,0);
-
-    }
-
-    
-}
+id=setInterval(MoveSlides,5000,'l');
 
 
-
-
-
-
-setInterval(MoveSlides,5000,'l');
-
-document.addEventListener('DOMContentLoaded', function(){
-
-    document.getElementById("sliderContent").style.width=(document.getElementById("sliderContent").childElementCount+1)*100+"%";
-    document.getElementById("cardSlider").style.width=(document.getElementById("cardSlider").childElementCount)*29+"vh";
-});

@@ -87,7 +87,7 @@ body{
 
 #slider{
     overflow: hidden;
-    height: 40vh;
+    height: 50vh;
     z-index: 1;
 }
 
@@ -109,7 +109,6 @@ body{
     left: 0;
     text-align: left;
     font-size: 0;
-    transition: left 2s cubic-bezier(0, .5, .5, 1);
    /* animation: 40s slidy infinite; */
   }
 
@@ -342,67 +341,9 @@ body{
     position: fixed;
     width: 12%;
     height: 5%;
-    margin-top: 15vh;
+    margin-top: 20vh;
     text-align: center;
     padding-top: 3vh;
     border: 1px solid black;
     background-color: rgba(508,138,229,0.3);
-}
-
-/******************************************************/
-/******************************************************/
-#cardsContainer{
-    width: 100%;
-    height: 40vh;
-    border-bottom: 2px solid white;
-    border-top: 2px solid white;
-    overflow: hidden;
-    transition: left 1s cubic-bezier(0, .5, .5, 1);
-    
-}
-
-#cardsContainer h1{
-    font-size: 2em;
-    text-align: right;
-    padding-right: 6vh;
-    padding-top: 4vh;
-    margin: 0;
-}
-#cardSlider{
-    width: 100%;
-    margin: 0;
-    position: relative;
-    left: -100%;
-}
-
-.card{
-    height: -webkit-fill-available;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 25vh;
-    margin-left: 2vh;
-    margin-right: 2vh;
-    float: left;
-}
-
-#cardContent{
-    width: 100%;
-    height:28vh;
-    overflow-x: scroll;
-}
-::-webkit-scrollbar {
-    display: none;
-}
-.cardController{
-    position: fixed;
-    background-color: cyan;
-    width: 4vh;
-    height: 8vh;
-    text-align: center;
-    margin-top: 10vh;
-}
-
-.cardController i{ 
-    padding-top: 2.5vh;
 }
