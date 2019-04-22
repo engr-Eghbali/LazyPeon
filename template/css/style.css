@@ -366,7 +366,8 @@ body{
     font-size: 2em;
     text-align: right;
     padding-right: 6vh;
-    padding-top: 4vh;
+    padding-top: 3vh;
+    padding-bottom: 1vh;
     margin: 0;
 }
 #cardSlider{
