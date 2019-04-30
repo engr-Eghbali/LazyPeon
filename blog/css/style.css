@@ -32,7 +32,7 @@ body{
    height: 100%; 
    background-color: darkgreen;
    float: right;
-   margin-right: 2%;
+   margin-right: 10%;
    text-align: center;
 }
 
@@ -53,7 +53,7 @@ body{
     float: left;
     color: floralwhite;
     margin-top: 0.3em;
-    margin-left: 2%;
+    margin-left: 10%;
 }
 
 #accountingDesktop:hover{
@@ -85,32 +85,9 @@ body{
     }
 */
 
-#slider{
-    overflow: hidden;
-    height: 50vh;
-    z-index: 1;
-}
-
-.slide {
-     width: 20%;
-     float: left;
-     height: -webkit-fill-available;
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: 100% 100%; 
-    
-    }
 
 
-#sliderContent { 
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    text-align: left;
-    font-size: 0;
-   /* animation: 40s slidy infinite; */
-  }
+
 
 .swap{
    position: fixed;
@@ -136,17 +113,13 @@ body{
     padding: 10px;
 }
 
-#menuBar{
-    width: 100%;
-    height: 8vh;
-    background-color: brown;
-}
+
 
 #searchBar{
     width: 25%;
     height: 100%;
-    float: right;
-    margin-right: 1%;
+    float: left;
+    margin-left: 2%;
 }
 
 #searchBar input{
@@ -319,7 +292,50 @@ body{
     text-align: center;
 }
 
+#subBar{
+    width: 100%;
+    height: 6vh;
+    background-color: gold;
+}
 
+.subBarLink{
+    width: 8%;
+    height: 65%;
+    padding-top: 2vh;
+    text-align: center;
+    float: right;
+    border-left: 1px solid black;
+    
+}
+
+#blogContentContainer{
+    width: 72%;
+    height: 100vh;
+    background-color: blue;
+    border: 2px solid white;
+    margin-left: 18%;
+}
+
+.ads{
+    width: 15%;
+    float: left;
+    height: 40vh;
+    margin-left: 1%;
+    margin-top: 1%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    position: fixed;
+}
+
+.ads p1{
+    background-color: cornflowerblue;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 3vh;
+    font-weight: 600;
+}
 .active{display: block;}
 .borderNone{border-bottom: none;}
 
@@ -334,16 +350,8 @@ body{
     #logo{width:20%;margin-right: 40%;height: 50%;}
     #sideMenu{display: block;}
     #menuBar{display: none;}
+    #searchBar{display: none;}
+    #subBar{display: none;}
 
 }
 
-.slideController{
-    position: fixed;
-    width: 12%;
-    height: 5%;
-    margin-top: 20vh;
-    text-align: center;
-    padding-top: 3vh;
-    border: 1px solid black;
-    background-color: rgba(508,138,229,0.3);
-}

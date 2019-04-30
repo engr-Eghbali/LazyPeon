@@ -32,7 +32,7 @@ body{
    height: 100%; 
    background-color: darkgreen;
    float: right;
-   margin-right: 2%;
+   margin-right: 5%;
    text-align: center;
 }
 
@@ -53,7 +53,7 @@ body{
     float: left;
     color: floralwhite;
     margin-top: 0.3em;
-    margin-left: 2%;
+    margin-left: 5%;
 }
 
 #accountingDesktop:hover{
@@ -341,8 +341,8 @@ body{
 
 .slideController{
     position: fixed;
-    width: 12%;
-    height: 5%;
+    width: 6%;
+    height: 6%;
     margin-top: 15vh;
     text-align: center;
     padding-top: 3vh;
@@ -389,8 +389,9 @@ body{
 }
 
 #cardContent{
-    width: 100%;
+    width: 90%;
     height:28vh;
+    margin-left: 5%;
     overflow-x: scroll;
 }
 ::-webkit-scrollbar {
