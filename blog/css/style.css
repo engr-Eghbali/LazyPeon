@@ -317,16 +317,16 @@ body{
 }
 
 .ads{
-    width: 15%;
+    width: 85%;
     float: left;
-    height: 40vh;
-    margin-left: 1%;
-    margin-top: 1%;
+    height: 45vh;
+    margin-left: 8%;
+    margin-top: 4%;
     text-align: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     color: white;
-    position: fixed;
+ 
 }
 
 .ads p1{
